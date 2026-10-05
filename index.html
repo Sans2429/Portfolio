@@ -3,90 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Santhosh - C# / .NET Developer portfolio">
-    <title>Santhosh | Developer Portfolio</title>
+    <meta name="description" content="M. Santhosh - C# / .NET Developer specializing in WPF desktop applications and 3D / CAD software with Eyeshot.">
+    <title>M. Santhosh | C# / .NET Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="nav">
-        <a class="logo" href="#top">Santhosh</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+        <a class="logo" href="#top"><span class="mono">&lt;</span>santhosh<span class="mono"> /&gt;</span></a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-actions">
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle light/dark theme">&#9788;</button>
+            <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+        </div>
     </nav>
 
     <header class="hero" id="top">
-        <p class="eyebrow">Hello, I'm</p>
-        <h1>Santhosh</h1>
-        <p class="role">C# / .NET Developer</p>
-        <p class="tagline">Building software, learning deeply, and solving problems.</p>
-        <div class="buttons">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+        <div class="hero-text">
+            <p class="eyebrow mono">// hello, world</p>
+            <h1>I'm M. Santhosh,<br>a <span class="accent">C# / .NET Developer</span>.</h1>
+            <p class="lead">
+                I build WPF desktop applications and 3D / CAD software, turning architectural
+                and engineering design requirements into reliable product features.
+            </p>
+            <div class="buttons">
+                <a class="btn primary" href="#projects">View my work</a>
+                <a class="btn" href="#contact">Get in touch</a>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:santhoshmconnect@gmail.com">Email</a>
+            </div>
+        </div>
+
+        <div class="code-card" aria-hidden="true">
+            <div class="code-bar"><span></span><span></span><span></span><em class="mono">developer.cs</em></div>
+<pre class="mono"><span class="c-kw">public class</span> <span class="c-type">Developer</span>
+{
+    <span class="c-kw">public string</span> Name = <span class="c-str">"M. Santhosh"</span>;
+    <span class="c-kw">public string</span> Focus = <span class="c-str">"WPF, 3D &amp; CAD"</span>;
+    <span class="c-kw">public string</span>[] Stack = {
+        <span class="c-str">"C#"</span>, <span class="c-str">".NET"</span>, <span class="c-str">"WPF"</span>,
+        <span class="c-str">"MVVM"</span>, <span class="c-str">"Eyeshot"</span>
+    };
+    <span class="c-kw">public double</span> Experience = <span class="c-type">3.0</span>; <span class="c-cm">// years</span>
+}</pre>
         </div>
     </header>
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a developer interested in C#, .NET, WPF, software architecture
-                and game development. I enjoy turning ideas into working software
-                and understanding how things work under the hood.
-            </p>
+            <h2><span class="mono accent">01.</span> About</h2>
+            <div class="about-grid">
+                <p>
+                    I'm a C# / .NET developer with 3 years of experience, including a 3-month
+                    internship, building WPF desktop applications. I specialize in 3D
+                    visualization and CAD-oriented software using Eyeshot. I'm strong in
+                    geometric and logical problem solving, care about clean and maintainable
+                    architecture, and have a growing interest in 3D graphics and software design.
+                </p>
+                <ul class="facts">
+                    <li><strong>Focus</strong><span>WPF, 3D &amp; CAD</span></li>
+                    <li><strong>Core stack</strong><span>C#, .NET, MVVM</span></li>
+                    <li><strong>Experience</strong><span>3 years</span></li>
+                    <li><strong>Based in</strong><span>Pudukkottai, Tamil Nadu</span></li>
+                </ul>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills">
-                <li>C#</li>
-                <li>.NET</li>
-                <li>WPF</li>
-                <li>SQL</li>
-                <li>Git</li>
-                <li>HTML / CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>Project 1</h3>
-                    <p>Short description of your project: what it does and what you used to build it.</p>
-                    <a href="https://github.com/YOUR_USERNAME/PROJECT_1" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        <section id="experience">
+            <h2><span class="mono accent">02.</span> Experience</h2>
+            <div class="timeline">
+                <article class="job">
+                    <div class="job-head">
+                        <h3>Software Developer <span class="accent">@ Cad Macro Design &amp; Solutions Pvt Ltd</span></h3>
+                        <span class="mono muted">2.7 years</span>
+                    </div>
+                    <ul>
+                        <li>Designed, built and maintained Windows desktop applications using C#, .NET, WPF and XAML.</li>
+                        <li>Implemented 3D visualization and CAD-related functionality with Eyeshot for design-driven applications.</li>
+                        <li>Translated architectural and engineering design requirements into working software features.</li>
+                        <li>Applied mathematical and geometric reasoning to complex design, visualization and application logic.</li>
+                        <li>Structured features with object-oriented design and MVVM principles for maintainability and reuse.</li>
+                        <li>Improved UI responsiveness, usability and performance when handling complex graphical content.</li>
+                    </ul>
                 </article>
-                <article class="card">
-                    <h3>Project 2</h3>
-                    <p>Short description of your project: what it does and what you used to build it.</p>
-                    <a href="https://github.com/YOUR_USERNAME/PROJECT_2" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-                </article>
-                <article class="card">
-                    <h3>Project 3</h3>
-                    <p>Short description of your project: what it does and what you used to build it.</p>
-                    <a href="https://github.com/YOUR_USERNAME/PROJECT_3" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+                <article class="job">
+                    <div class="job-head">
+                        <h3>Software Developer Intern <span class="accent">@ Cad Macro Design &amp; Solutions Pvt Ltd</span></h3>
+                        <span class="mono muted">3 months</span>
+                    </div>
+                    <ul>
+                        <li>Contributed to real-world projects within professional development workflows and team practices.</li>
+                        <li>Learned coding standards, debugging and application structure while supporting active development.</li>
+                        <li>Built the C# / .NET and desktop foundation that led to a full-time developer role.</li>
+                    </ul>
                 </article>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Want to work together or just say hi? Reach out:</p>
-            <p>
-                <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-                <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">github.com/YOUR_USERNAME</a>
+        <section id="skills">
+            <h2><span class="mono accent">03.</span> Skills</h2>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h3>Languages &amp; Core</h3>
+                    <ul class="tags"><li>C#</li><li>.NET</li><li>OOP</li><li>Design principles</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Desktop Development</h3>
+                    <ul class="tags"><li>WPF</li><li>XAML</li><li>MVVM</li><li>Responsive UI</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>3D / CAD</h3>
+                    <ul class="tags"><li>Eyeshot</li><li>3D visualization</li><li>Geometry</li><li>Architectural workflows</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Data &amp; Configuration</h3>
+                    <ul class="tags"><li>SQL</li><li>XML</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Engineering Practices</h3>
+                    <ul class="tags"><li>Git</li><li>Debugging</li><li>Performance optimization</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Problem Solving</h3>
+                    <ul class="tags"><li>Mathematical</li><li>Geometric</li><li>Logical reasoning</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2><span class="mono accent">04.</span> Projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Stock Market Prediction</h3>
+                    <p>Analyzed market data with machine-learning and data-analysis techniques to identify patterns and support price prediction.</p>
+                    <ul class="tags small"><li>Python</li><li>TensorFlow</li><li>Pandas</li><li>Matplotlib</li></ul>
+                    <div class="card-links">
+                        <a href="https://github.com/Sans2429/stock_market_pred/blob/main/stock_market_pred.ipynb" target="_blank" rel="noopener">Source &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>Attendance Monitoring System</h3>
+                    <p>Built a facial-recognition attendance concept that identifies individuals from group images.</p>
+                    <ul class="tags small"><li>Python</li><li>OpenCV</li><li>CNN</li><li>Face recognition</li></ul>
+                    <div class="card-links">
+                        <a href="https://github.com/Sans2429/attendance_monitor_system" target="_blank" rel="noopener">Source &rarr;</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>TreeUiCreator</h3>
+                    <p>Built a dynamic ui panel creation based on Tree structure.</p>
+                    <ul class="tags small"><li>Tree</li><li>MVVM</li></ul>
+                    <div class="card-links">
+                        <a href="https://github.com/Sans2429/TreeUiCreator" target="_blank" rel="noopener">Source &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2><span class="mono accent">05.</span> Education &amp; Training</h2>
+            <div class="timeline">
+                <article class="job">
+                    <div class="job-head">
+                        <h3>BE, Computer Science and Engineering</h3>
+                        <span class="mono muted">2020 - 2024</span>
+                    </div>
+                    <p class="job-sub">Annamalai University, Faculty of Engineering and Technology &middot; CGPA 8.6</p>
+                </article>
+                <article class="job">
+                    <div class="job-head">
+                        <h3>Higher Secondary (HSC) &amp; SSLC</h3>
+                        <span class="mono muted">2020 / 2018</span>
+                    </div>
+                    <p class="job-sub">St Joseph's Hr Sec School &middot; HSC 77.8% &middot; SSLC 89.4%</p>
+                </article>
+            </div>
+
+            <div class="skill-groups training">
+                <div class="skill-group">
+                    <h3>Cyber Security</h3>
+                    <p>Acmegrade with Mood Indigo, IIT Bombay. Linux command line, system administration, scripting and security fundamentals.</p>
+                </div>
+                <div class="skill-group">
+                    <h3>AI &amp; ML</h3>
+                    <p>Annamalai Innovation &amp; Incubation Research Foundation (EDII). Intelligent systems, prediction and problem solving.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2><span class="mono accent">06.</span> Contact</h2>
+            <p class="lead">
+                I'm open to interesting conversations and opportunities, especially around
+                desktop, 3D and CAD software. Email is the best way to reach me.
             </p>
+            <a class="btn primary" href="mailto:santhoshmconnect@gmail.com">santhoshmconnect@gmail.com</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Santhosh. Built with HTML, CSS and JavaScript.</p>
+        <p class="mono">&copy; <span id="year"></span> M. Santhosh &middot; Pudukkottai, Tamil Nadu</p>
     </footer>
 
     <script src="script.js"></script>
